@@ -1,0 +1,59 @@
+body {
+  background-color: aquamarine;
+  margin: 0px;
+  padding: 0px;
+}
+h1,
+h2,
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+.name {
+  text-align: center;
+  margin: 0 auto;
+}
+.name > div {
+  margin: 20px auto;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.iam,
+.i-like {
+  text-align: center;
+  text-decoration: none;
+}
+img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+  transition: all ease-in-out 0.2s;
+}
+img:hover {
+  box-shadow: 0, 8px, 12px, 0 rgba(34, 60, 80, 0.16);
+}
+.about {
+  text-align: center;
+}
+.contact {
+  text-align: center;
+}
+.portfolio {
+  text-align: center;
+}
+.Socials {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  display: flex;
+}
+.social a:hover {
+  color: brown;
+  transition: all ease 0.5s;
+}
