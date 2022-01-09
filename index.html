@@ -1,158 +1,65 @@
-<!--doctype html-->
-<html>
+<!DOCTYPE html>
+<html lang = "en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, intial-scale=1.0">
 <title>Loretta Khisa</title>
-<!--style----->
-<style>
-body{
-background-color:#161616;
-margin: 0px;
-padding: 0px;
-}
-#main {
- padding: 30px 50px;
- position: relative;
- width: 100%;
- height: 100vh;
- background-color: #edf1fd;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    letter-spacing: 2px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: aqua;
-    z-index: 1;
-}
-.menu{
-    display: flex;
-}
-.menu li a{
-    padding: 15px 15px;	
-    font-size: 12px;
-    list-style-type: none;	
-}
 
-.menu li a:hover{
-    font-weight: bold;
-    transition: 0.5s;
-    font-size: 25px;
-    list-style-type: none;	
-}
-.name{
-    font-family: monospace;
-    width: 500px;
-    position: absolute;
-    left: 20%;
-    top: 50%;
-    transform: translate(-20% -30%);
-}
-.Socials{
-    position: absolute;
-    left: 50px;
-    bottom: 50px;
-    display: flex;
-}
-.social a:hover{
-    color:brown;
-    transition: all ease 0.5s;
-}
-#about{
-    width: 100%;
-    height: 100vh;
-    background-color: cornflowerblue;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 5% 0px 5%;
-    position: relative;
-}
-.about-text{
-    width: 50%
-}
-#portfolio{
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(255, 231, 223, 1);
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 5% 0px 5%;
-    position: relative;
-}
-#contact{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    height: 200px;
-    background-color: #F4F7FF;
-    margin: 20px 0px;
-    box-sizing: border-box;
-    box-shadow:2px 0px 20px rgba(0,0,0,0.4); 
-}
-</style>
-
-</head>
+<link rel="stylesheet" href="main.css">
 <body>
-  <section id="main">
-<nav>
-<!--menu--------->
-<div class="toggle"></div>
-<ul class="menu" list-style-type = none>
-<li class="active"><a href="#main" >About me</a></li>
-<li><a href="#about">My Skills</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#contact-form">Contact</a></li>
-</ul>
-</nav>
-<div class = "name">
-    <h1>I'm <font color = "#17d1ac">Loretta</font> Khisa</h1>
-    <p class = "bio">Graduate electrical and telecommunications engineer with a passion for web development. I enjoy coding while listening to music. I create fun solutions to complex problems.</p>
-</div>
-<div class = "Socials">
-    <a href = "#"><i class = "facebook-f"></i></a>
-    <a href = "#"><i class = "twitter"></i></a>
-    <a href = "#"><i class = "instagram"></i></a>
-    <a href = "#"><i class = "github"></i></a>
-</div>
- </section>
- <section id = "about">
-     <div class = "About me text">
-         <h1>About me</h1>
-         <h2>Umuzi Web Development Recruit</h2>
-         <p>An aspiring full stack web developer with a passion of creating fun solutions. I love nature and working with children. I have the dream to impact my society through girl child mentorship and environmental conservation through environment awareness campaigns and tree planting.</p>
-	  <h2>The following is a list of my skills</h2>
-         <ul>
-           <li>Python</li>
-           <li>Javascript</li>
-           <li>HTML5 & CSS</li>
-         </ul>    
-     </div>
-     <div class = "My image">
-        <img alt = "model" src = "https://media-exp1.licdn.com/dms/image/C4D03AQHqy46LAUZXZg/profile-displayphoto-shrink_200_200/0/1634547962277?e=1641427200&v=beta&t=wNEY3J9s86oQYa6SKzGBTAKTeRayzRFQS_o6GhY84iQ" width="200"/>
-     </div>
- </section>
- <section id = "portfolio">
-     <h1 class = "p-heading">Portfolio</h1>
- </section>
- <section id = "Contact">
-     <h1 class = "My contact">Feel free to reach out by clicking below</h1>
-     <a href="mailto:loretta.khisa@umuzi.org">Click to email</a>	 
- </section>
+    <div class = "name">
+        <img src = "image/IMG-20190706-WA0003.jpg"/>
+        <h1>I'm <font color = "#17d1ac">Loretta</font> Khisa</h1>
+        <div class="about-grid">
+            <div class = "Iam">
+                <h3>I am</h3>
+                <ul class = "about-list">
+                    <li>An engineer</li>
+                    <li>A web developer</li>
+                    <li>A teacher</li>
+                </ul>
+            </div>
+            <div class = "I-like">
+                <h3>I like to</h3>
+                <ul class="about-list">
+                    <li>Meet new people</li>
+                    <li>Read novels</li>
+                    <li>Go hiking</li>
+                </ul>
+            </div>
+        </div>
+        
+        <p class = "bio">Graduate electrical and telecommunications engineer with a passion for web development. I enjoy coding while listening to music. I create fun solutions to complex problems.</p>
+    </div>
+    <div class = "about">
+        <h1>About me</h1>
+        <h2>Umuzi Web Development Recruit</h2>
+        <p>An aspiring full stack web developer with a passion of creating fun solutions. I love nature and working with children. I have the dream to impact my society through girl child mentorship and environmental conservation through environment awareness campaigns and tree planting.</p>
+        <h3>The following is a list of my skills</h3>
+        <ul class="about-list">
+            <li>Python</li>
+            <li>Javascript</li>
+            <li>HTML5 & CSS</li>
+          </ul>  
+    </div>
+    <div class = "skills">
+
+    </div>
+    <div class = "portfolio">
+        <h1 class = "p-heading">Portfolio</h1>
+    </div>
+
+    <div class = "contact">
+        <h1>Feel free to reach out by clicking below</h1>
+        <a href="mailto:loretta.khisa@umuzi.org">Click to email</a>
+    </div>
+    <div class = "socials">
+        <a href = "https://www.instagram.com/loretta_khisa">Instagram</a>
+        <a href = "https://www.github.com/lkhisa">GitHub</a>
+        <a href = "https://www.linkedin.com/in/loretta-khisa-847208129">Linkedin</a>
+        <a href = "https://www.facebook.com/Loretta-Khisa">Facebook</a>
+    </div>
 </body>
 </html>
 
