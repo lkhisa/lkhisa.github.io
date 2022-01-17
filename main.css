@@ -47,11 +47,8 @@ img:hover {
 .portfolio {
   text-align: center;
 }
-.Socials {
-  position: absolute;
-  left: 50px;
-  bottom: 50px;
-  display: flex;
+.socials {
+  text-align: center;
 }
 .social a:hover {
   color: brown;
