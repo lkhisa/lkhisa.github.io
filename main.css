@@ -3,6 +3,18 @@ body {
   margin: 0px;
   padding: 0px;
 }
+.menu {
+  padding: 10px 50px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.menu-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
 h1,
 h2,
 h3 {
@@ -12,11 +24,11 @@ h3 {
   list-style: none;
   padding: 0;
 }
-.name {
+#name {
   text-align: center;
   margin: 0 auto;
 }
-.name > div {
+#name > div {
   margin: 20px auto;
 }
 .about-grid {
@@ -38,13 +50,13 @@ img {
 img:hover {
   box-shadow: 0, 8px, 12px, 0 rgba(34, 60, 80, 0.16);
 }
-.about {
+#about {
   text-align: center;
 }
-.contact {
+#contact {
   text-align: center;
 }
-.portfolio {
+#portfolio {
   text-align: center;
 }
 .socials {
