@@ -5,10 +5,12 @@ body {
 }
 .menu {
   padding: 10px 50px;
-  position: relative;
+  position: sticky;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
+  top: 0px;
+  background-color: darksalmon;
 }
 .menu-list {
   display: flex;
