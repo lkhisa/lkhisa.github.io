@@ -9,8 +9,6 @@ body {
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  position: fixed;
-  top: 0px;
 }
 .menu-list {
   display: flex;
