@@ -3,6 +3,12 @@ body {
   margin: 0px;
   padding: 0px;
 }
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
 .menu {
   padding: 10px 50px;
   position: sticky;
