@@ -2,6 +2,7 @@ body {
   background-color: aquamarine;
   margin: 0px;
   padding: 0px;
+  text-align: center;
 }
 .nav-bar {
   position: sticky;
@@ -80,6 +81,7 @@ img:hover {
 }
 #portfolio {
   text-align: center;
+  align-items: center;
 }
 .socials {
   text-align: center;
@@ -87,4 +89,112 @@ img:hover {
 .social a:hover {
   color: brown;
   transition: all ease 0.5s;
+}
+.project-container {
+  position: relative;
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.project-card {
+  width: 30vw;
+  flex-direction: column;
+  display: flex;
+  background: #090909;
+  min-height: 250px;
+  border-radius: 10px;
+  border: 1px solid #464646;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: -1px -18px 45px 7px rgba(0, 0, 0, 0.88);
+  -webkit-box-shadow: -1px -18px 45px 7px rgba(0, 0, 0, 0.88);
+  transition: 0.3s;
+  --distance: -150px;
+  color: #565656;
+}
+.project {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #565656;
+  line-height: 50px;
+}
+.project-tags {
+  font-family: Consolas;
+  display: flex;
+  justify-content: center;
+}
+
+.project-tag {
+  border: 1px solid #565656;
+  margin-right: 0.2em;
+  width: 50px;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: x-small;
+}
+
+.project-card:hover {
+  background: #000000;
+}
+
+.project-year {
+  font-size: xx-small;
+  text-align: end;
+  padding-right: 2em;
+  padding-top: 1em;
+}
+.project-description {
+  font-size: 0.82rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  height: 80px;
+}
+.project-card:hover .project,
+.project-card:hover .project-description {
+  color: #707070;
+}
+
+.project-card:hover .project-tag {
+  border: 1px solid var(--tc);
+  color: var(--tc);
+}
+.link-holder {
+  padding: 10px 20px;
+  text-align: end;
+  bottom: 0;
+}
+.project-link {
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #565656;
+  border-radius: 10px;
+  text-transform: lowercase;
+  font-size: x-small;
+  color: var(--tc);
+  bottom: 10px;
+}
+
+.project-link:hover {
+  border: 1px solid #fff;
+  color: #d3d3d3;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+.project-card {
+  min-width: 200px;
+  width: 50vw;
+}
+
+.project-card:not(:first-child) {
+  margin-top: var(--distance);
+}
+
+.project-card:hover ~ .project-card,
+.project-card:focus-within ~ .project-card {
+  transform: translateY(calc((var(--distance)) * -1));
 }
